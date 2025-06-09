@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:HH-{####}",
+ "creation": "2025-06-04 16:24:08.579985",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "household_name",
+  "ward",
+  "zone",
+  "state",
+  "country",
+  "column_break_equp",
+  "address",
+  "members_section",
+  "members"
+ ],
+ "fields": [
+  {
+   "fieldname": "household_name",
+   "fieldtype": "Data",
+   "label": "Household Name"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_equp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ward",
+   "fieldtype": "Select",
+   "label": "Ward",
+   "options": "\nKappakkal"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Select",
+   "label": "Zone",
+   "options": "\nChamundivalappu\nNadhinagar\nKappakkal\nChakkumkadav\nKoyavalapp\nMughadar\nNainum Valappu\nChullikkadu\nPayyanakkal"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Select",
+   "label": "State",
+   "options": "\nKerala"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Select",
+   "label": "Country",
+   "options": "\nIndia"
+  },
+  {
+   "fieldname": "members_section",
+   "fieldtype": "Section Break",
+   "label": "Family Members"
+  },
+  {
+   "fieldname": "members",
+   "fieldtype": "Table",
+   "label": "Members",
+   "options": "Family"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Community",
+   "link_fieldname": "household"
+  }
+ ],
+ "modified": "2025-06-05 16:10:17.470470",
+ "modified_by": "Administrator",
+ "module": "ilab",
+ "name": "Household",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "household_name, address",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "household_name"
+}
