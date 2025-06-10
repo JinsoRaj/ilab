@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ST-{####}",
+ "creation": "2025-06-09 11:58:51.225002",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "existing_details_section",
+  "community",
+  "column_break_mgcl",
+  "full_name",
+  "student_details_section",
+  "school_or_insti",
+  "email_id",
+  "column_break_fchw",
+  "class",
+  "highest_qualification",
+  "section_break_zndj",
+  "is_clap_member",
+  "column_break_zhle",
+  "is_dtlp_member",
+  "column_break_kbjr",
+  "column_break_iecm"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "community",
+   "fieldtype": "Link",
+   "label": "Community info",
+   "options": "Community",
+   "read_only": 1
+  },
+  {
+   "fieldname": "student_details_section",
+   "fieldtype": "Section Break",
+   "label": "Student details & Programmes"
+  },
+  {
+   "fieldname": "column_break_fchw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Data",
+   "label": "Class"
+  },
+  {
+   "fieldname": "existing_details_section",
+   "fieldtype": "Section Break",
+   "label": "Existing details "
+  },
+  {
+   "fieldname": "column_break_mgcl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_zndj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_clap_member",
+   "fieldtype": "Check",
+   "label": "is CLAP member"
+  },
+  {
+   "fieldname": "column_break_zhle",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_dtlp_member",
+   "fieldtype": "Check",
+   "label": "is DTLP member"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email id"
+  },
+  {
+   "fieldname": "highest_qualification",
+   "fieldtype": "Small Text",
+   "label": "Highest Qualification"
+  },
+  {
+   "fieldname": "school_or_insti",
+   "fieldtype": "Data",
+   "label": "School or Instituition"
+  },
+  {
+   "fieldname": "column_break_kbjr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_iecm",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-09 15:49:05.979215",
+ "modified_by": "Administrator",
+ "module": "ilab",
+ "name": "Student",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}
